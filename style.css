@@ -1,4 +1,4 @@
-
+/* 
 *{
     padding: 0px;
     margin: 0px;
@@ -131,4 +131,206 @@ button{
 }
 .complete-icon:hover {
     opacity: 0.8; 
+}
+ */
+
+
+
+ * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    padding: 0px 60px;
+}
+
+.container-1 {
+    text-align: center;
+}
+
+.head {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.input-fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.name {
+    width: 36%;
+    height: 63px;
+    padding: 10px;
+    min-width: 280px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#text-date {
+    width: 25%;
+    height: 63px;
+    padding: 10px;
+    min-width: 280px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#priority {
+    width: 22%;
+    height: 63px;
+    padding: 10px;
+    min-width: 135px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button {
+    width: 14%;
+    height: 63px;
+    padding: 10px;
+    min-width: 120px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tasks-container1,
+.tasks-container2,
+.tasks-container3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.today-tasks-container,
+.future-tasks-container,
+.completed-tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.task {
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+.loaded-tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    opacity: 0.8;
+}
+
+.complete-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.complete-icon:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    .input-fields {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .name, #text-date, #priority {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .task {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .loaded-tasks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        font-size: 36px;
+    }
+
+    .input-fields {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .name, #text-date, #priority {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .task {
+        font-size: 18px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .loaded-tasks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
